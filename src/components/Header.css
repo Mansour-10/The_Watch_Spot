@@ -1,0 +1,163 @@
+.light-header {
+  --primary-background: #fff;
+  --secondary-background: #aaa;
+  --third-background: #141414;
+  --base-background: #1E2827;
+  --main-color:#006400;
+  --text-primary-color:#000;
+  --text-secondary-color:#383838;
+  --invert:invert(0%);
+}
+.dark-header {
+  --primary-background: #000;
+  --secondary-background: #444444;
+  --third-background: #e9e9e9;
+  --base-background: #1E2827;
+  --main-color:#006400;
+  --text-primary-color:#fff;
+  --invert:invert(100%);
+  --text-secondary-color:#d3d2d2;
+}
+
+
+
+/* Nav bar section with responsive */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 2rem;
+  transition: all .6s ease;
+  background-color: var(--third-background);
+  color: var(--primary-background);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin-left: 90px;
+  gap: 50px ;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-background);
+  font-size: 10px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+nav img {
+  margin: 15px 50px 0 60px;
+  filter: var(--invert);
+}
+
+nav .call-btn {
+  background-color: var(--base-background);
+  color: white;
+  border: none;
+  height: 48px;
+  width: 159px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 10px;
+  font-weight: 300;
+  outline: none;
+  transition: all .6s ease;
+  margin-left: 380px;
+}
+
+nav.call-btn:hover {
+  transition: all .6s ease;
+  background-color: var(--primary-background);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary-background);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    margin-left: 95%;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transition: all .6s ease;
+    background-color: var(--base-background);
+    background-size: cover;
+    transition: .6s;
+    transform: translateY(-100vh);
+  }
+
+  header nav a{
+    margin-left: -50px;
+  }
+
+  header nav a:hover {
+    color: var(--primary-background);
+    font-size: 50px;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav .call-btn {
+    margin-left: 20px;
+  }
+}
+
+/* end of navbar section and responsive */

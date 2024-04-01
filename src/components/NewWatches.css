@@ -1,0 +1,143 @@
+.light-new_watches {
+  --primary-background: #fff;
+  --secondary-background: #aaa;
+  --third-background: #141414;
+  --base-background: #1e2827;
+  --main-color: #006400;
+  --text-primary-color: #000;
+  --text-secondary-color: #383838;
+  --fourth-color: #ffffff80;
+  --fifth-color: #14141466;
+}
+.dark-new_watches {
+  --primary-background: #000;
+  --secondary-background: #444444;
+  --third-background: #e9e9e9;
+  --base-background: #1e2827;
+  --main-color: #006400;
+  --text-primary-color: #fff;
+  --fourth-color: #0e0e0e80;
+  --text-secondary-color: #d3d2d2;
+  --fifth-color: #f3f3f366;
+}
+.new-watches {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-watches h2 {
+  font-size: 40px;
+  font-weight: semibold;
+  margin-left: -590px;
+  color: var(--text-primary-color);
+}
+
+.new-watches span {
+  font-size: 12px;
+  color: var(--fifth-color);
+  margin-left: -590px;
+}
+
+.new-watches img {
+  margin: 20px;
+  transition: transform 0.5s ease-out;
+}
+
+.new-watches img:hover {
+  transform: scale(1.11);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .new-watches {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .new-watches h2 {
+    font-size: 40px;
+    font-weight: semibold;
+    margin-left: -250px;
+    color: var(--text-primary-color);
+  }
+
+  .new-watches span {
+    font-size: 12px;
+    color: var(--fifth-color);
+    margin-left: -250px;
+  }
+
+  .images-sides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images-sides img {
+    width: 342px;
+  }
+}
+
+/* /////////////////////////////////////// */
+@media only screen and (min-width: 369px) and (max-width: 768px) {
+  .new-watches {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .new-watches h2 {
+    font-size: 40px;
+    font-weight: semibold;
+    margin-left: 10px;
+    width: 100%;
+    color: var(--text-primary-color);
+  }
+
+  .new-watches span {
+    font-size: 12px;
+    color: var(--fifth-color);
+    margin-left: 10px;
+  }
+
+  .images-sides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .images-sides img {
+    width: 342px;
+  }
+}
+/* //////////////////////////////////// */
+
+@media only screen and (max-width: 368px) {
+  .new-watches {
+    display: flex;
+    flex-direction: column;
+    }
+  
+  .new-watches h2 {
+    font-size: 40px;
+    font-weight: semibold;
+    margin-left: 10px;
+    width: 100%;
+    color: var(--text-primary-color);
+  }
+  
+  .new-watches span {
+    font-size: 12px;
+    color: var(--fifth-color);
+    margin-left: 10px;
+  }
+  
+.images-sides{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.images-sides img{
+  width: 300px;
+}
+}

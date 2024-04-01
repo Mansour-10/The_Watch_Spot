@@ -1,0 +1,241 @@
+.light-catalog {
+  --primary-background: #fff;
+  --secondary-background: #aaa;
+  --third-background: #141414;
+  --base-background: #1e2827;
+  --main-color: #006400;
+  --text-primary-color: #000;
+  --text-secondary-color: #383838;
+  --fourth-color: #ffffff80;
+  --fifth-color: #14141466;
+}
+.dark-catalog {
+  --primary-background: #000;
+  --secondary-background: #444444;
+  --third-background: #e9e9e9;
+  --base-background: #1e2827;
+  --main-color: #006400;
+  --text-primary-color: #fff;
+  --fourth-color: #0e0e0e80;
+  --text-secondary-color: #d3d2d2;
+  --fifth-color: #f3f3f366;
+}
+
+.main-catalog {
+  display: flex;
+  flex-flow: column;
+}
+
+.main-catalog h2 {
+  font-size: 40px;
+  font-weight: semibold;
+  margin-left: -1050px;
+  margin-bottom: 50px;
+  color: var(--text-primary-color);
+}
+
+.main-catalog .catalog-images {
+  width: 90%;
+  display: flex;
+  padding-left: 90px;
+  flex-wrap: wrap;
+  gap: 2.5%;
+}
+
+.main-catalog .catalog-images p {
+  color: var(--text-primary-color);
+  font-size: 14px;
+}
+
+.main-catalog .catalog-images span {
+  font-size: 12px;
+  color: var(--fifth-color);
+}
+
+.main-catalog .catalog-images tr td img {
+  transition: transform 0.5s ease-out;
+  margin-bottom: 15px;
+}
+
+.main-catalog .catalog-images img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.main-catalog button {
+  width: 122px;
+  height: 50px;
+  background-color: var(--base-background);
+  color: #fff;
+  border-radius: 8px;
+  margin-left: 950px;
+  margin-top: 80px;
+  transition: transform 0.5s ease-out;
+  margin-bottom: 160px;
+  transition: all 0.6s ease;
+}
+
+.main-catalog button:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+/* ###################################################################### */
+.watchDetailsOverlay {
+  position: fixed;
+  width: 60vw;
+  height: 70vh;
+  background-color: #062c28ee;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15.5%;
+  left: 20%;
+  border-radius: 30px 0px;
+}
+
+.watchDetails {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  color: white;
+  font-size: 20px;
+}
+
+.watchDetails::-webkit-scrollbar {
+  width: 10px;
+}
+
+.watchDetails::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* ###################################################################### */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-catalog {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .main-catalog h2 {
+    font-size: 40px;
+    font-weight: semibold;
+    margin-left: -550px;
+    margin-bottom: 50px;
+    color: var(--text-primary-color);
+  }
+
+  .main-catalog .catalog-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5%;
+    padding-left: 130px;
+  }
+
+  .main-catalog button {
+    width: 122px;
+    height: 50px;
+    background-color: var(--base-background);
+    color: #fff;
+    border-radius: 8px;
+    margin: 80px 0 160px 500px;
+  }
+
+  .watchDetailsOverlay {
+    position: fixed;
+    width: 60vw;
+    height: 70vh;
+  }
+
+  .watchDetails {
+    width: 70%;
+    height: 80%;
+  }
+}
+
+/* /////////////////////////////////////// */
+@media only screen and (min-width: 369px) and (max-width: 768px) {
+  .main-catalog h2 {
+    font-size: 40px;
+    font-weight: semibold;
+    margin: -80px 0 50px -150px;
+    color: var(--text-primary-color);
+  }
+
+  .main-catalog .catalog-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5%;
+    margin-left: -50px;
+  }
+
+  .main-catalog button {
+    width: 122px;
+    height: 50px;
+    background-color: var(--base-background);
+    color: #fff;
+    border-radius: 8px;
+    margin: 80px 0 160px 220px;
+  }
+
+  .watchDetailsOverlay {
+    width: 70vw;
+    height: 80vh;
+    top: 15.5%;
+    left: 15%;
+  }
+
+  .watchDetails {
+    width: 80%;
+    height: 90%;
+  }
+}
+/* //////////////////////////////////// */
+
+@media only screen and (max-width: 368px) {
+  .main-catalog h2 {
+    font-size: 40px;
+    font-weight: semibold;
+    margin: -80px 0 50px -150px;
+    color: var(--text-primary-color);
+  }
+
+  .main-catalog .catalog-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5%;
+    margin-left: -140px;
+  }
+
+  .main-catalog button {
+    width: 122px;
+    height: 50px;
+    background-color: var(--base-background);
+    color: #fff;
+    border-radius: 8px;
+    margin: 80px 0 160px 150px;
+  }
+
+  .watchDetailsOverlay {
+    width: 80vw;
+    height: 90vh;
+    top: 5%;
+    left: 10%;
+  }
+
+  .watchDetails {
+    width: 85%;
+    height: 100%;
+  }
+}
