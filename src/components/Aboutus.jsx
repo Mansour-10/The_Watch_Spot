@@ -1,6 +1,6 @@
 import watchAboutUs from "../assets/watchAboutUs.gif";
 import "../components/Aboutus.css";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const Aboutus = ({ isDarkMode }) => {
   const aboutClassname = isDarkMode ? "dark-about" : "light-about";
@@ -22,7 +22,7 @@ const Aboutus = ({ isDarkMode }) => {
         </p>
       </div>
       <div className="about-us-img">
-        <img src={watchAboutUs} alt="Watch about us "  />
+        <img src={watchAboutUs} alt="Watch about us " />
       </div>
     </div>
   );

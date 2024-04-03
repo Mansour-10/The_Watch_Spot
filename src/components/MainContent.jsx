@@ -12,13 +12,13 @@ const MainContent = ({ isDarkMode }) => {
       <div className="header-main container">
         <div className="header-texts">
           <h1 className="h1_header_texts">
-            Welcome to our collection  <br/> of premium watches
+            Welcome to our collection of premium watches
           </h1>
           <p>
-            Our watches are not just timepieces, but <br />
-            also an expression of your personality and <br /> lifestyle. From
-            classic designs to modern <br /> ones, we have a watch to suit every
-            taste <br /> and occasion.
+            Our watches are not just timepieces, but 
+            also an expression of your personality and  lifestyle. From
+            classic designs to modern  ones, we have a watch to suit every
+            taste  and occasion.
           </p>
         </div>
       </div>

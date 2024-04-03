@@ -16,7 +16,7 @@ import { useState } from "react";
 const Catalog = ({ isDarkMode }) => {
   const catalogClassname = isDarkMode ? "dark-catalog" : "light-catalog";
 
-  // #################################################################################################
+  // details for every watch catalog ##########
   const [isOpen, setisOpen] = useState(false);
   const [selectedWatch, setselectedWatch] = useState(false);
 
@@ -24,7 +24,7 @@ const Catalog = ({ isDarkMode }) => {
     setisOpen(!isOpen);
     setselectedWatch(watch);
   };
-  // #################################################################################################
+  // array of all watches for catalog ##########
   const [watch_list] = useState([
     {
       image_link: catalog1,
@@ -114,8 +114,8 @@ const Catalog = ({ isDarkMode }) => {
 
   return (
     <>
-      {/* ################################################################################################# */}
-      <div className="selectedWatchContainer">
+      {/*  details section ###### */}
+      <div className="selectedWatch Container">
         {isOpen && (
           <div className="watchDetailsOverlay" onClick={() => setisOpen(false)}>
             <div className="watchDetails" onClick={(e) => e.stopPropagation}>
@@ -131,7 +131,7 @@ const Catalog = ({ isDarkMode }) => {
           </div>
         )}
       </div>
-      {/* ################################################################################################# */}
+      {/* ############## */}
       {/* Catalog section */}
       <div className={`main-catalog container ${catalogClassname}`}>
         <div className="catalog container">
@@ -156,6 +156,7 @@ const Catalog = ({ isDarkMode }) => {
     </>
   );
 };
+
 Catalog.propTypes = {
   isDarkMode: PropTypes.bool.isRequired,
 };

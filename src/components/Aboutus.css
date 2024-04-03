@@ -88,16 +88,15 @@
     width: 715px;
     margin-left: 0px;
     margin-bottom: 160px;
-    
   }
 }
 
 /* /////////////////////////////////////// */
 @media only screen and (min-width: 369px) and (max-width: 768px) {
-    /* About us Section */
-   .about-us-main {
+  /* About us Section */
+  .about-us-main {
     margin-top: 700px;
-   }
+  }
 
   .about-us-texts {
     display: flex;
@@ -118,7 +117,7 @@
     color: var(--text-primary-color);
     margin-left: 80px;
   }
-  .about-us-texts .h2_about_us{
+  .about-us-texts .h2_about_us {
     width: 80%;
   }
 
@@ -134,8 +133,7 @@
     width: 335px;
     object-fit: cover;
     margin-left: 0px;
-    margin-bottom: 160px;  
-    
+    margin-bottom: 160px;
   }
 }
 /* //////////////////////////////////// */
@@ -143,7 +141,7 @@
 @media only screen and (max-width: 368px) {
   .about-us-main {
     margin-top: 600px;
-   }
+  }
 
   .about-us-texts {
     display: flex;
@@ -174,7 +172,6 @@
     width: 100%;
     object-fit: cover;
     margin-left: 0px;
-    margin-bottom: 160px;  
-    
+    margin-bottom: 160px;
   }
 }

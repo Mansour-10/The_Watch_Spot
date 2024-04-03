@@ -8,11 +8,12 @@ import PropTypes from 'prop-types';
 const Header = ({ isDarkMode }) => {
   const navRef = useRef();
 
+  const headerClassName = isDarkMode ? "dark-header" : "light-header";
+
   const showNavbar = () => {
       navRef.current.classList.toggle("responsive_nav");
   };
 
-  const headerClassName = isDarkMode ? "dark-header" : "light-header";
 
   return (
       <header className={headerClassName}>

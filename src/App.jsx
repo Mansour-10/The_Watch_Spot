@@ -4,7 +4,7 @@ import { Footer, Header, MainContent, Aboutus, Catalog, NewWatches, Sale } from 
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Check localStorage for dark mode preference
+    // localStorage for dark mode preference
     return JSON.parse(localStorage.getItem('isDarkMode')) || false;
   });
 
@@ -13,7 +13,7 @@ function App() {
   const toggleDarkMode = () => {
     const newDarkMode = !isDarkMode;
     setIsDarkMode(newDarkMode);
-    // Save dark mode setting to localStorage
+    // Saved dark mode setting to localStorage
     localStorage.setItem('isDarkMode', JSON.stringify(newDarkMode));
   };
 
